@@ -598,6 +598,24 @@ h3 {
     transition: all 0.2s;
 }
 
+.sidebar-back-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.82rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: color 0.2s, background 0.2s;
+}
+
+.sidebar-back-link:hover {
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+}
+
 .btn-logout:hover {
     background-color: #ef4444;
     color: white;

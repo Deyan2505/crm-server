@@ -1,6 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Users, Mail, Settings } from 'lucide-react';
+import { NavLink, Link } from 'react-router-dom';
+import { LayoutDashboard, Users, Mail, Settings, ArrowLeft } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
 
@@ -41,6 +41,10 @@ const Sidebar = () => {
             </nav>
 
             <div className="sidebar-footer">
+                <Link to="/" className="sidebar-back-link">
+                    <ArrowLeft size={16} />
+                    <span>Към сайта</span>
+                </Link>
                 <div className="user-info">
                     <div className="avatar">{initials}</div>
                     <div className="user-details">
